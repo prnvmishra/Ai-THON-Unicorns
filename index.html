@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitcoin $ Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Bitcoin $</h1>
+            <img id=gm src="./WhatsApp Image 2024-09-02 at 10.19.49.jpeg"/>
+            <p id="mm">Your go-to place for Bitcoin insights, trends, and knowledge.</p>
+        </header>
+
+        <!-- Real-time Bitcoin Price -->
+        <section id="price-section">
+            <h2 id="jj">Current Bitcoin $:</h2>
+            <div id="btc-price">$63,257.19 <br>
+                ₹48,26,561.15 <br>
+                €52,092.59
+            </div>
+        </section>
+
+        <!-- Bitcoin Overview -->
+        <section id="overview-section">
+            <h2 id="hm">What is Bitcoin?</h2>
+            <p>Bitcoin is a decentralized digital currency, without a central bank or single administrator, that can be sent from user to user on the peer-to-peer bitcoin network without the need for intermediaries.</p>
+            <p>Bitcoin transactions are verified by network nodes through cryptography and recorded in a public distributed ledger called a blockchain.</p>
+            <p>Key Features of Bitcoin:</p>
+            <ul>
+                <li>Decentralized</li>
+                <li>Peer-to-peer transactions</li>
+                <li>Limited supply (21 million BTC)</li>
+                <li>Open source and transparent</li>
+            </ul>
+        </section>
+
+        <!-- Recent Bitcoin News -->
+        <section id="news-section">
+            <h2>Recent Bitcoin News:</h2>
+            <div id="news-container"></div>
+        </section>
+
+        <!-- Historical Price Trends -->
+        <section id="chart-section">
+            <h2>Bitcoin Price Trends (Past Year)</h2>
+    
+            <img id="btc-chart" src="./Screenshot 2024-09-02 at 11.24.00 AM.png" />
+            <img id="btc2" src="./Screenshot 2024-09-02 at 11.38.09 AM.png"/>
+            
+        </section>
+
+        <!-- Bitcoin Quiz -->
+        <section id="quiz-section">
+            <h2>Bitcoin Quiz:</h2>
+            <div id="quiz-container">
+                <div id="question"></div>
+                <div id="choices"></div>
+                <button id="next-button" style="display: none;" onclick="loadNextQuestion()">Next Question</button>
+            </div>
+            <div id="results" style="display: none;"></div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq-section">
+            <h2>FAQs:</h2>
+            <div class="faq-item">
+                <h3>What is a Bitcoin wallet?</h3>
+                <p>A Bitcoin wallet is a software program where Bitcoins are stored. Technically, Bitcoins are not stored anywhere; there is a private key (secret number) for every Bitcoin address that is saved in the Bitcoin wallet of the person who owns the balance.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Is Bitcoin legal?</h3>
+                <p>The legality of Bitcoin varies from country to country. Some countries fully embrace Bitcoin, while others impose restrictions or outright bans. It’s important to check the regulations in your country.</p>
+            </div>
+            <div class="faq-item">
+                <h3>How can I buy Bitcoin?</h3>
+                <p>You can buy Bitcoin on various cryptocurrency exchanges, through peer-to-peer platforms, or using Bitcoin ATMs. You’ll need a Bitcoin wallet to store your Bitcoins.</p>
+            </div>
+            <div class="faq-item">
+                <h3>What are Bitcoin miners?</h3>
+                <p>Bitcoin miners use specialized computers to solve complex mathematical problems that verify and add Bitcoin transactions to the blockchain. Miners are rewarded with newly minted Bitcoins and transaction fees.</p>
+            </div>
+        </section>
+
+        <!-- Newsletter Subscription -->
+        <section id="subscribe-section">
+            <h2>Subscribe to Bitcoin Updates</h2>
+            <form id="subscribe-form">
+                <input type="email" id="email" placeholder="Enter your email" required />
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+        
+        <!-- Popup Modal -->
+
+        <div id="popup-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <div class="success-icon">
+                    ✓
+                </div>
+                <h2>Thank You for Subscribing!</h2>
+                <p>You will now receive the latest updates on Bitcoin.</p>
+            </div>
+        </div>
+
+        <!--Blog Content-->
+        <section id="blog-section">
+            <h2>Bitcoin Insights</h2>
+            <div class="blog-posts">
+                <article>
+                    <h3>Understanding Bitcoin Basics</h3>
+                    <p>Bitcoin is a decentralized digital currency, without a central bank or single administrator...</p>
+                    <a href="#" class="read-more">Read more</a>
+                </article>
+                <article>
+                    <h3>How to Store Your Bitcoins Safely</h3>
+                    <p>Storing Bitcoin securely is crucial to ensure the safety of your investment...</p>
+                    <a href="#" class="read-more">Read more</a>
+                </article>
+            </div>
+        </section>
+
+        <!--Price Alert-->
+        <section id="price-alert-section">
+            <h2>Set a Bitcoin Price Alert</h2>
+            <form id="price-alert-form">
+                <input type="number" id="alert-price" placeholder="Enter your target price" required />
+                <button type="submit">Set Alert</button>
+            </form>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2024 Bitcoin Portal. All rights reserved.</p>
+        </footer>
+    </div>
+    
+
+
+    <script src="script.js"></script>
+</body>
+</html>
